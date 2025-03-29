@@ -1,0 +1,212 @@
+.tabWap {
+  .tabHead {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding-left: unset;
+      width: 100%;
+      gap: 30px;
+      li {
+        position: relative;
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+        font-family: "Ceviche One", system-ui;
+        font-size: 24px;
+        &.activeTab {
+          // background: linear-gradient(178.29deg, #FF00EE 1.55%, rgba(255, 0, 238, 0) 98.66%);
+          color: #fff;
+          img{
+            position: absolute;
+            left: -10%;
+            top: 3px;
+            width: 120%;
+            z-index: -1;
+          }
+        }
+        &::after {
+          content: "";
+          background-color: #3f3f3f;
+          width: 65px;
+          height: 1px;
+          position: absolute;
+          top: 20px;
+          right: -55px;
+          transform: rotate(45deg);
+        }
+        &::before {
+          content: "";
+          background-color: #3f3f3f;
+          width: 65px;
+          height: 1px;
+          position: absolute;
+          top: 20px;
+          left: -55px;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(odd) {
+          border-top: 1px dotted #3f3f3f;
+          padding-top: 16px;
+        }
+        &:nth-child(even) {
+          border-bottom: 1px dotted #3f3f3f;
+          padding-bottom: 16px;
+          &.activeTab {
+            // background: linear-gradient(178.29deg, #FF00EE 1.55%, rgba(255, 0, 238, 0) 98.66%);
+            color: #fff;
+            img{
+            transform: rotate(180deg);
+            bottom: 0;
+            top: auto;
+            }
+          }
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+          &::before {
+            width: 20px;
+            height: 20px;
+            background-image: url("../../assets/tab_circle.svg");
+            border-radius: 50%;
+            top: 77%;
+            left: -11px;
+            background-color: transparent;
+          }
+        }
+        &:nth-child(2) {
+          &::after {
+            width: 20px;
+            height: 20px;
+            background-image: url("../../assets/tab_circle.svg");
+            border-radius: 50%;
+            top: -20%;
+            right: -55px;
+            background-color: transparent;
+          }
+        }
+        &:last-child {
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  .tabconent {
+    margin-top: 98px;
+    .myAccount_wrp {
+      padding: 3px;
+      background-image: url("../../assets/account_contet_left_back.png"),
+        url("../../assets/account_contet_right_back.png");
+      background-repeat: no-repeat;
+      background-position: top left, top right;
+      background-size: 60px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #fff;
+        clear: both;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom: 20px solid #fff;
+        clear: both;
+      }
+      .myAccount_inner {
+        min-height: 493px;
+        background-color: #1b1b1b;
+        .formWrp {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          padding: 60px 30px ;
+          .formLft {
+            width: 40%;
+          }
+          .formLRight {
+            display: flex;
+            // grid-template-columns: repeat(2,1fr);
+            flex-wrap: wrap;
+            gap: 45px;
+            input {
+              background-color: transparent;
+              border: transparent;
+            }
+            .InputGroup {
+              width: 46%;
+              background-color: transparent;
+              border: unset;
+              position: relative;
+              &:nth-child(odd) {
+                border-bottom: 1px solid #3f3f3f;
+                &::before {
+                    content:'';
+                    width: 65px;
+          height: 1px;
+          position: absolute;
+          top: 20px;
+          right: -55px;
+          transform: rotate(45deg);
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("../../assets/tab_circle.svg");
+                    border-radius: 50%;
+                    top: calc(100% - 10px);
+                    left: -10px;
+                    background-color: transparent;
+                  }
+              }
+              &:nth-child(even) {
+                border-top: 1px solid #3f3f3f;
+                
+                &::before {
+                  content: "";
+                  background-color: #3f3f3f;
+                  width: 55px;
+                  height: 1px;
+                  position: absolute;
+                  top: 10px;
+                  left: -50px;
+                  transform: rotate(-28deg);
+                }
+                &::after {
+                    content:'';
+                    width: 65px;
+          height: 1px;
+          position: absolute;
+          top: 20px;
+          right: -55px;
+          transform: rotate(45deg);
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("../../assets/tab_circle.svg");
+                    border-radius: 50%;
+                    top: -10px;
+                    right: -10px;
+                    background-color: transparent;
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

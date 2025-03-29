@@ -1,16 +1,16 @@
 import React from 'react';
 import AccountNav from '../components/AccountNav';
-import { Container } from '@mui/material';
-import AccountDetails from '../components/AccountDetails';
+import AccountTab from '../components/AccountTab';
 
 const AccountPage = () => {
   console.log('AccountPage Loaded');
   return (
     <>
       <AccountNav />
-      <Container maxWidth='lg'>
-        <AccountDetails />
-      </Container>
+      <div className='container' >
+
+     <AccountTab />
+      </div>
     </>
   );
 };

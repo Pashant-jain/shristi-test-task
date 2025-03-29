@@ -1,0 +1,133 @@
+.AccountNav_wrp {
+  display: flex;
+  gap: 12px;
+  .logo_wrp {
+    background: radial-gradient(
+      107.53% 341.1% at 111.57% 162.3%,
+      rgba(255, 64, 251, 0.125) 0%,
+      rgba(255, 255, 255, 0.03) 100%
+    );
+    backdrop-filter: blur(20px);
+    width: 20%;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Condiment", cursive;
+      text-align: center;
+      color: white;
+      text-shadow: 0px 0px 5px rgba(210, 0, 220, 0.8),
+        0px 0px 10px rgba(200, 0, 208, 0.6), 0px 0px 20px rgba(160, 0, 184, 0.4),
+        0px 0px 30px rgba(135, 0, 158, 0.3);
+      font-size: 50px;
+      margin: unset;
+      @media (max-width: 650px) {
+        font-size: 16px;
+          }
+    }
+  }
+  .Accountnav_right {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../assets/nav-back.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center left;
+    padding: 35px;
+    @media (max-width: 650px) {
+        justify-content: flex-end;
+        padding: 16px 24px;
+          }
+          @media (max-width: 650px) {
+           img{
+            width: 32px;
+           }
+              }
+    .bigOffMarket {
+      background-color: transparent;
+      border: unset;
+      img {
+        background-color: transparent;
+      }
+    }
+    .amount_wrp {
+      background-image: url("../../assets/amount_back.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      padding: 18px 59px;
+      position: relative;
+      .amount {
+        color: white;
+      }
+      .currency {
+        color: #6d6d6d;
+        font-size: 12px;
+      }
+      .addBtn {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #02e902 0%, #00c000 100%);
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: unset;
+        box-shadow: unset;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+    .profile_wrp{
+        background-image: url("../../assets/Subtract.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        width: 230px;
+        padding-left: 25px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 650px) {
+            width: 65px;
+            padding-left: 10px;
+            svg{
+                margin-left: 8px;
+            }
+    
+          }
+        img{
+            border-radius: 50%;
+            box-shadow: 0 0 12px #F46EF1;
+            border: 1px solid #FF00EE;
+        }
+        p{
+            width: 50%;
+            text-align: center;
+            vertical-align: middle;
+            @media (max-width: 650px) {
+                display: none;
+                  }
+        }
+        
+        
+    }
+  }
+}
