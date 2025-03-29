@@ -1,0 +1,39 @@
+.btn{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ensure the background scales properly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Add cursor pointer for better UX */
+    text-align: center;
+    font-family: 'Ceviche One', system-ui;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    &:hover, &:focus, &:active{
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    &.primary{
+    background-image: url('../../assets/ButtonBg.png');
+    color: #4b024a;
+    }
+    &.secondary{
+        background-image: url('../../assets/BlueButtonBg.png');
+        color: #004a42;
+    }
+    &.small{
+        width: 161px;
+        height: 54px;  
+    }
+    &.medium{
+        width: 280px;
+        height: 93px;
+        font-size: 34.78px;
+    }
+    &.large{
+        width: 50dvw;
+        height: 136px;
+        font-size: 30px;
+    }
+}

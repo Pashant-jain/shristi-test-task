@@ -1,0 +1,21 @@
+.PopularGames_wrp{
+    .heading{
+
+    }
+    .card_wrp{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 19px;
+        .card{
+            background: linear-gradient(180deg, #222, #000);
+            width: 296px;
+            padding: 16px;
+            border-radius: 24px;
+            .playBtn{
+                background-image: url("../../assets/ReverseBtn.png");
+                margin: -30px auto 0;
+            }
+        }
+    }
+}

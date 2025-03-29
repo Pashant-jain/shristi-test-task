@@ -1,0 +1,92 @@
+@import "../../styles/keyframes.scss";
+.banner_wrp {
+  background-image: url("../../assets/DashboardBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100dvh - 93px);
+  img {
+    width: 100%;
+  }
+  .banner_inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: calc(100dvh - 93px);
+    // @media (max-width: 768px) {
+    //   flex-direction: column;
+    // }
+    .left {
+      min-height: calc(100dvh - 93px);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 60px 0;
+      .Heading1 {
+        animation: zoomInDown 1s linear;
+      }
+      .Heading2 {
+        font-style: italic;
+        font-family: "Condiment", cursive;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 0px 5px rgba(210, 0, 220, 0.8),
+          0px 0px 10px rgba(36, 2, 37, 0.6),
+          0px 0px 20px rgba(160, 0, 184, 0.884),
+          0px 0px 30px rgba(90, 5, 105, 0.842);
+        font-size: 100px;
+        margin: 0;
+        margin-top: -6%;
+        animation: lightSpeedInLeft 2s linear;
+        animation-delay: 1s;
+      }
+      .playNowBtn {
+        margin: 0 auto;
+        animation: zoomIn 1s linear;
+        animation-delay: 2s;
+      }
+    }
+    .right {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+.advisment_wrp {
+  position: relative;
+  padding: 16px 0;
+  marquee {
+    .welcomeTextBg {
+      background: linear-gradient(
+        90deg,
+        rgba(14, 14, 14, 0) 0%,
+        #0e0e0e 15%,
+        #0e0e0e 50%,
+        #0e0e0e 85%,
+        rgba(14, 14, 14, 0) 100%
+      );
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      font-family: "Ceviche One", system-ui;
+      font-size: 36px;
+      margin-bottom: 0;
+      span {
+        color: #ff00ee;
+        font-size: 36px;
+      }
+    }
+  }
+  .downArrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 388px;
+  }
+}
