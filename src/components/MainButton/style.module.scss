@@ -41,5 +41,9 @@
         width: 50dvw;
         height: 136px;
         font-size: 30px;
+        max-height: 100px;
+         @media (min-width: 1600px) {
+        width: 800px;
+       }
     }
 }

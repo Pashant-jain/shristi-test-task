@@ -59,6 +59,10 @@
       .playBtn {
         background-image: url('../../assets/ReverseBtn.png');
         margin: -35px auto 0;
+          @media (max-width: 400px) {
+            width: 50px;
+            font-size: 0.5rem;
+          }
       }
       img {
         width: 100%;

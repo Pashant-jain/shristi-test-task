@@ -21,7 +21,7 @@ const AccountTab = () => {
           <div className='container'>
             <div className={style.myAccount_wrp}>
               <div className={style.myAccount_inner}>
-                <img src={Account} alt='account' />
+                {/* <img src={Account} alt='account' /> */}
                 <div className={style.formWrp}>
                   <div className={style.formLft}>
                     <img src={Skull} alt='account-img' />

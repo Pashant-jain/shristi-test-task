@@ -24,8 +24,8 @@
       display: flex;
       align-items: center;
       padding: 22px;
-         @media (max-width: 980px) {
-            min-height: 250px;
+         @media (max-width: 650px) {
+              width: auto;
          }
       &.ReferCard1 {
         background-image: url('../../assets/CardMan.png');
@@ -76,20 +76,21 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    
      @media (max-width: 980px) {
       min-height: 300px;
      }
       @media (max-width: 768px) {
       min-height: 200px;
      }
+     
     .playoffBtn {
+     
          @media (max-width: 980px) {
            position: absolute;
       top: 15%;
          }
-        //   @media (max-width: 600px) {
-        //     height: 10dvw;
-        //  }
+       
      
       height: 8dvw;
       span {
@@ -105,5 +106,6 @@
            }
       }
     }
+
   }
 }

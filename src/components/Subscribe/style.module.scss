@@ -20,6 +20,9 @@
       display: flex;
       align-items: center;
       padding: 32px;
+       @media (max-width: 650px) {
+              width: auto;
+         }
       &.SubscribeCard1 {
         background-image: url('../../assets/FAQCard.png');
         justify-content: flex-start;
