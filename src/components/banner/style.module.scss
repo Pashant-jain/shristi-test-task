@@ -1,6 +1,6 @@
-@import "../../styles/keyframes.scss";
+@import '../../styles/keyframes.scss';
 .banner_wrp {
-  background-image: url("../../assets/DashboardBackground.png");
+  background-image: url('../../assets/DashboardBackground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,19 +26,19 @@
         animation: zoomInDown 1s linear;
       }
       .Heading2 {
-        font-style: italic;
-        font-family: "Condiment", cursive;
+        font-family: 'Condiment', cursive;
         text-align: center;
         color: white;
-        text-shadow: 0px 0px 5px rgba(210, 0, 220, 0.8),
-          0px 0px 10px rgba(36, 2, 37, 0.6),
-          0px 0px 20px rgba(160, 0, 184, 0.884),
-          0px 0px 30px rgba(90, 5, 105, 0.842);
+        text-shadow: 0px 0px 5px rgba(210, 0, 220, 0.8), 0px 0px 10px rgba(36, 2, 37, 0.6),
+          0px 0px 20px rgba(160, 0, 184, 0.884), 0px 0px 30px rgba(90, 5, 105, 0.842);
         font-size: 100px;
         margin: 0;
         margin-top: -6%;
         animation: lightSpeedInLeft 2s linear;
         animation-delay: 1s;
+        @media (max-width: 768px) {
+          font-size: 70px;
+        }
       }
       .playNowBtn {
         margin: 0 auto;
@@ -58,6 +58,8 @@
   padding: 16px 0;
   marquee {
     .welcomeTextBg {
+      white-space: nowrap;
+      overflow: hidden;
       background: linear-gradient(
         90deg,
         rgba(14, 14, 14, 0) 0%,
@@ -69,15 +71,34 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
+      
     }
 
     p {
-      font-family: "Ceviche One", system-ui;
+      font-family: 'Ceviche One', system-ui;
       font-size: 36px;
+      white-space: nowrap;
       margin-bottom: 0;
+      @media (max-width: 980px) {
+        width: 26px;
+      }
+      @media (max-width: 768px) {
+        width: 12px;
+  
+      }
       span {
         color: #ff00ee;
         font-size: 36px;
+       
+        @media (max-width: 980px) {
+          width: 26px;
+        }
+        @media (max-width: 768px) {
+          width: 12px;
+           display: block;
+           
+        }
       }
     }
   }
@@ -88,5 +109,8 @@
     right: 0;
     margin: auto;
     width: 388px;
+    @media (max-width: 980px) {
+      width: 200px;
+    }
   }
 }

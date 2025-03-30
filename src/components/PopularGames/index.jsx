@@ -10,9 +10,11 @@ import PopularGame07 from '../../assets/PopularGame07.png';
 import PopularGame08 from '../../assets/PopularGame08.png';
 import PopularGame09 from '../../assets/PopularGame09.png';
 import PopularGame10 from '../../assets/PopularGame10.png';
+import EmptyHeart from "../../assets/EmptyHeart.png"
 import MainButton from "../MainButton/MainButton";
 
 const PopularGames = () => {
+
   const games = [
     { id: 1, image: PopularGame01 },
     { id: 2, image: PopularGame02 },
@@ -27,16 +29,19 @@ const PopularGames = () => {
   ];  
   return (
     <div className={style.PopularGames_wrp}>
-      <div className="container">
-        <div className={style.heading}></div>
+      <div className='container'>
+        <div className={style.heading}>Popular Games</div>
         <div className={style.card_wrp}>
-        {games.map((game) => (
-          <div className={style.card}>
-            <img src={game.image} alt="PopularGame01" />
-            <MainButton size="small" variant="primary" className={style.playBtn}>
+          {games.map((game) => (
+            <div className={style.card}>
+              <div className={style.imageContainer}>
+                <img src={game.image} alt='PopularGame01' />
+                <img src={EmptyHeart} alt='Wishlist' className={style.heartIcon} />
+              </div>
+              <MainButton size='small' variant='primary' className={style.playBtn}>
                 Play Now
               </MainButton>
-          </div>
+            </div>
           ))}
         </div>
       </div>

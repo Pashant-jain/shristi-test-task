@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Dashboard from '../components/Dashboard';
 import PopularGames from '../components/PopularGames/';
 import SocialMedia from '../components/SocialMedia';
 import Subscribe from "../components/Subscribe"
@@ -17,7 +15,7 @@ const LandingPage = () => {
       <PopularGames />
       <Subscribe />
       <SocialMedia />
-
+      
       <Footer />
     </div>
   );

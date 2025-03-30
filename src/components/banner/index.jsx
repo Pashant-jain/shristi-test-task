@@ -17,7 +17,7 @@ const Banner = () => {
                 <MainButton size="medium" variant="primary">
                   Play Now
                 </MainButton>
-                {/* <MainButton text="Play Now" className="dashboard-main-btn" /> */}
+              
               </div>
             </div>
 

@@ -1,67 +1,109 @@
 .ReferCards_wrp {
-  background-image: url("../../assets/ReferCardsBack.png");
+  background-image: url('../../assets/ReferCardsBack.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   padding: 114px 0 59px;
+    @media (max-width: 768px) {
+      padding: 5% 0 4%;
+    }
+
   .ReferCards_inner {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 32px;
-    @media (max-width: 980px) {
-        flex-direction: column;
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
     .ReferCard {
-      min-height: 470px;
+      min-height: 400px;
       width: 100%;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       display: flex;
       align-items: center;
-      padding: 32px;
+      padding: 22px;
+         @media (max-width: 980px) {
+            min-height: 250px;
+         }
       &.ReferCard1 {
-        background-image: url("../../assets/CardMan.png");
+        background-image: url('../../assets/CardMan.png');
         justify-content: flex-end;
       }
       &.ReferCard2 {
-        background-image: url("../../assets/CardWoman.png");
+        background-image: url('../../assets/CardWoman.png');
         justify-content: flex-start;
       }
       .cardContent {
         width: 50%;
         h2 {
-          font-family: "Ceviche One", system-ui;
+          font-family: 'Ceviche One', system-ui;
           font-weight: 100 !important;
           line-height: 86%;
           margin: 0;
+          font-size: 2.2rem;
         }
         p {
-          font-family: "Montserrat", sans-serif;
-          font-size: 20px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem;
+        }
+        @media (max-width: 980px) {
+          p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+          }
+          h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+          }
         }
         .womenBtn {
           margin-left: auto;
-          background-image: url("../../assets/ReverseBtn.png");
-          // box-shadow: -12px 12px 36px #F46EF1;
+          background-image: url('../../assets/ReverseBtn.png');
+     
         }
       }
     }
   }
   .playoffCta {
     margin-top: 168px;
-    background-image: url("../../assets/PlayGamesBackground.png");
+    background-image: url('../../assets/PlayGamesBackground.png');
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 397px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    .playoffBtn{
-        height: 8dvw;
-        span{
-            transform: rotate(5deg);
-        }
+    position: relative;
+     @media (max-width: 980px) {
+      min-height: 300px;
+     }
+      @media (max-width: 768px) {
+      min-height: 200px;
+     }
+    .playoffBtn {
+         @media (max-width: 980px) {
+           position: absolute;
+      top: 15%;
+         }
+        //   @media (max-width: 600px) {
+        //     height: 10dvw;
+        //  }
+     
+      height: 8dvw;
+      span {
+        transform: rotate(5deg);
+         @media (max-width: 980px) {
+          font-size: 1.2rem;
+         }
+           @media (max-width: 600px) {
+            font-size: 1rem;
+           }
+            @media (max-width: 425px) {
+            font-size: 0.5rem;
+           }
+      }
     }
   }
 }

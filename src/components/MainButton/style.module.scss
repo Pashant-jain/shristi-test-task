@@ -23,13 +23,19 @@
         color: #004a42;
     }
     &.small{
-        width: 161px;
+        width: 120px;
         height: 54px;  
+        font-size: 1.2rem;
     }
     &.medium{
         width: 280px;
         height: 93px;
         font-size: 34.78px;
+           @media (max-width: 768px) {
+       width: 180px;
+        height: 93px;
+        font-size: 1.2rem;
+    }
     }
     &.large{
         width: 50dvw;
